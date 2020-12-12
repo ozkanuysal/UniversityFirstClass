@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hesap Makinası Yapıyorum</title>
+<style>
+.sayfa{
+	width:360px;
+	margin:auto;
+}
+table{
+background:#efefef;
+border-spacing:10px;
+text-align:center;
+
+}
+table   .btn{
+width: 60px;
+background: gray;
+text-align: center;
+line-height :60px;
+color: #fff;
+font-size: 1.5em;
+}
+#islem , #gosterge{
+padding: 5px;
+text-align: right;
+
+}
+#gosterge{
+height:60px;
+background:#ddfafa;
+color:#333;
+font-size: 1.8em;
+text-align: right;
+line-height: 40px;
+padding: 10px;
+box-sizing: border-box;
+}
+#islem{
+background: #aaa;
+
+}
+
+</style>
+
+
+<body>
+	<div class="sayfa">
+	<h1>Hesap Makinesi</h1>
+	<table>
+	<tr>
+	<td colspan="5" id="islem">1</td>
+	</tr>
+	<tr>
+	<td colspan="5" id="gosterge">1</td>
+	</tr>
+	
+	<tr>
+	<td class="btn btnRakam">7</td>
+	<td class="btn btnRakam">8</td>
+	<td class="btn btnRakam">9</td>
+	<td class="btn">/</td>
+	<td class="btn">CE</td>
+
+	</tr>
+	<tr>
+	<td class="btn btnRakam">4</td>
+	<td class="btn btnRakam">5</td>
+	<td class="btn btnRakam">6</td>
+	<td class="btn">*</td>
+	<td class="btn">C</td>
+
+	</tr>
+	
+	<tr>
+	<td class="btn btnRakam">1</td>
+	<td class="btn btnRakam">2</td>
+	<td class="btn btnRakam">3</td>
+	<td class="btn">-</td>
+	<td rowspan="2" class="btn">=</td>
+
+	</tr>
+	<tr>
+	<td colspan="2" class="btn btnRakam">0</td>
+	<td class="btn">.</td>
+	<td class="btn">+</td>
+	
+	</tr>
+
+	</table>
+	</div>
+<script>
+
+var optDurum=false,opt="",sonuc=0;
+var btnRakam=document.querySelectorAll(".btnRakam");
+var txtGosterge=document.querySelector("#gosterge");
+var btnOpt=document.querySelectorAll(".btnOpt");
+
+btnRakam.forEach(function(element){});
+
+element.onlick=function(e){
+if(gosterge.textContent=="0" || optDurum)
+gosterge.textContent="";
+
+
+
+gosterge.textContent+=this.textContent;
+optDurum=false;
+
+}
+});
+
+</script>
+
+
+
+	</body>
+	</htlm>
+	
